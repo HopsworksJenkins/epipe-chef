@@ -35,6 +35,10 @@ attribute "epipe/group",
           :description => "Group to run Epipe server as",
           :type => "string"
 
+attribute "epipe/user-home",
+          :description => "Home directory of epipe user",
+          :type => "string"
+
 attribute "epipe/version",
           :description => "Version of epipe to use",
           :type => "string"
