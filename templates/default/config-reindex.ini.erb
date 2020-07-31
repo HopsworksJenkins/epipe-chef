@@ -32,9 +32,10 @@ log_max_files=<%=node['epipe']['log_max_files']%>
 # ElasticSearch configuration
 
 elastic_addr = <%= @elastic_addr %>
-index = projects
-featurestore_index = featurestore
-app_provenance_index = appprovenance
+index = <%= node['elastic']['epipe']['search_index'] %>
+featurestore_index = <%= node['elastic']['epipe']['featurestore_index'] %>
+app_provenance_index = <%= node['elastic']['epipe']['app_provenance_index'] %>
+ml_provenance_index = <%= node['elastic']['epipe']['ml_index'] %>
 elastic_batch = 20000
 ewait_time = 5000
 
