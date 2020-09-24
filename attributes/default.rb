@@ -7,7 +7,7 @@ include_attribute "elasticsearch"
 default['epipe']['version']                  = "0.14.0"
 default['epipe']['user']                     = node['install']['user'].empty? ? node['hops']['hdfs']['user'] : node['install']['user']
 default['epipe']['user-home']                = "/home/#{node['epipe']['user']}"
-default['epipe']['url']                      = "#{node['download_url']}/epipe/test/#{node['platform_family']}/epipe-#{node['epipe']['version']}-pr-78.tar.gz"
+default['epipe']['url']                      = "#{node['download_url']}/epipe/test/#{node['platform_family']}/epipe-#{node['epipe']['version']}-pr-90.tar.gz"
 default['epipe']['systemd']                  = "true"
 default['epipe']['dir']                      = node['install']['dir'].empty? ? "/srv" : node['install']['dir']
 default['epipe']['home']                     = node['epipe']['dir'] + "/epipe-" + "#{node['epipe']['version']}"
